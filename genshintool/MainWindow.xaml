@@ -1,0 +1,22 @@
+﻿<Window x:Name="MainWindow1" x:Class="genshintool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:genshintool"
+        mc:Ignorable="d"
+        Title="Genshin Log" Height="450" Width="170.667" FontFamily="Britannic Bold" FontSize="10">
+    <Grid Margin="0,0,2,-2" RenderTransformOrigin="0.373,0.496">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ProgressBar x:Name="resinProgressbar" Height="20" Margin="16,135,16,0" VerticalAlignment="Top" Grid.Column="1" Foreground="#FF3369DC" Maximum="160"/>
+        <Button x:Name="ResinEditButton" Content="Edit Resin" HorizontalAlignment="Left" Margin="43,160,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Height="20"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="125" VerticalAlignment="Top" Width="129" Source="Fragile_Resin.png" Grid.Column="1" Margin="16,5,0,0"/>
+        <Label x:Name="datetest" Grid.ColumnSpan="2" Content="Date and Time" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="8" IsEnabled="False"/>
+        <Label x:Name="resinDetail" Grid.ColumnSpan="2" Content="" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top" FontSize="11"/>
+        <Label x:Name="timeSpanTest" Grid.ColumnSpan="2" Content="Label" HorizontalAlignment="Left" Margin="61,262,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
